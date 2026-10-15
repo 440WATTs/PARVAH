@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#166534" />
+    <meta name="description" content="PARVAH (परवाह) — Elderly Safety, Health Routine & Community Care for Rural Sikkim. Accessible offline-capable check-ins, medicine reminders, and community escalation." />
+    <title>PARVAH — Senior Care & Safety for Rural Sikkim</title>
+    <script type="module" crossorigin src="/assets/index-BAJGhurl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Daf1u9gM.css">
+  </head>
+  <body class="bg-[#fbf9f5] text-stone-900 min-h-screen">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration note:', err.message);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
